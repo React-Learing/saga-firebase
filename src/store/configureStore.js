@@ -13,7 +13,6 @@ export default function configureStore(initialState) {
       applyMiddleware(sagaMiddleware),
       window.devToolsExtension ? window.devToolsExtension() : (f) => f
     )
-
   );
   sagaMiddleware.run(rootSaga);
 
